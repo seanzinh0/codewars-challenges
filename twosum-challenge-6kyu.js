@@ -11,11 +11,24 @@
  * twoSum([3, 2, 4], 6) // returns [1, 2] or [2, 1]
  */
 
+// ORIGINAL SOLUTION
+// function twoSum(numbers, target) {
+//     for(let i = 0; i < numbers.length; i++){
+//         for(let j = i + 1; j < numbers.length; j++)
+//             if(numbers[i] + numbers[j] === target){
+//                 return [i, j];
+//             }
+//     }
+// }
+
+// REFACTORED USING HASHMAP
 function twoSum(numbers, target) {
+    let hashMap = {};
     for(let i = 0; i < numbers.length; i++){
-        for(let j = i + 1; j < numbers.length; j++)
-            if(numbers[i] + numbers[j] === target){
-                return [i, j];
-            }
+        let complement = target - numbers[i];
+        if(complement in hashMap){
+            return[hashMap[complement], i];
+        }
+        hashMap[numbers[i]] = i;
     }
 }
