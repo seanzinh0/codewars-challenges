@@ -18,3 +18,12 @@ function count(string) {
     }
     return hashMap;
 }
+
+/**
+ * Since I learned hashmap for twosum I wanted to apply it to this problem since the result is an object
+ * I first created an empty hash map
+ * Then I turned the string into an array
+ * I looped through that array and set the target variable to strArr[i] to get the value
+ * Next, check if hashmap has the target already and if it does add 1 to the value and if it isn't in the hashmap add the strArr[i] in and set the value to 1
+ * Last return the hashmap
+ */

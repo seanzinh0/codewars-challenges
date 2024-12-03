@@ -29,3 +29,10 @@ function findUniq(arr) {
         }
     }
 }
+
+/**
+ * To solve this problem I first had to check for an array that contains 3 elements
+ * I used if else statements and compared values to see which value is unique to return
+ * Then for any array larger than 3 I used a loop and checked to see if the value at arr[i] doesn't equal at arr[0]
+ * Return the unique value
+ */

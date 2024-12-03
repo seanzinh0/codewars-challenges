@@ -18,3 +18,9 @@ function arrayDiff(a, b) {
     }
     return result;
 }
+
+/**
+ * To solve this challenge all I did was set an empty array
+ * Then I looped through the first array and checked if the second does not include a[i]
+ * If it doesn't push to the result array and return the result
+ */

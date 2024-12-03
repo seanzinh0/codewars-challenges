@@ -28,3 +28,11 @@ function towerBuilder(nFloors) {
     }
     return tower;
 }
+
+/**
+ * To solve this I first needed to make an empty array to store the tower in
+ * Then I looped through the amount of floors
+ * For each iteration I pushed a string that contained the space calculated by taking the nFloors minus the current index - 1
+ * I calculated the * by multiplying the current i by 2 and adding 1 since each floor needs to be an odd number of stars
+ * Last I returned the tower
+ */
