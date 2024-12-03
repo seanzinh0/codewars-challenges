@@ -27,3 +27,8 @@ function likes(names) {
     }
 
 }
+
+/**
+ * This challenge was a fun one because I originally was going to do a for loop but realized using the length as a count was an easier solution.
+ * I decided to have the count equal the length of the array and have conditionals to check and return the appropriate message using string interpolation.
+ */

@@ -32,3 +32,16 @@ function twoSum(numbers, target) {
         hashMap[numbers[i]] = i;
     }
 }
+
+/**
+ * This problem was inherently pretty easy at first
+ * I used the "bruteforce" way first where I looped through the array and each sub array and checked that the numbers added together equal the target
+ * If it did then return i and j, but this solution uses two loops which isn't the best way to solve the challenge
+ * The second solution was tto use a hash map this was something I looked up.
+ * Hashmaps contain key value pairs where the key is the index
+ * With this solution I looped through the numbers and used a complement to search for the values at target - arr[i] to find what would add up to equal the target
+ * Next was to check if the complement is in the hashmap and if it is return the hashmap at the key where there is a complement
+ * If no complement is found at the key to be the value of numbers[i] and the value be the index
+ * This allows for the array to be mapped out
+ * This was fun to learn and I learned how to use hashmaps for solutions
+ */

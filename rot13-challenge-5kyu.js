@@ -33,3 +33,13 @@ function rot13(str) {
     }
     return result;
 }
+
+/**
+ * This was a difficult challenge at first but was very rewarding and fun
+ * My thought process was since ROT13 means rotating 13 it takes the 13th character after a letter in the alphabet and uses that for deciphering a coded message
+ * First I had to create two sets of alphabets, one lower case and one upper case.
+ * Then I created an empty string to store the result of the deciphered message.
+ * Next was to loop the characters in the string and check if the characters are in the alphabet
+ * If so get the index of the current character and add 13 to it and mod 26 so that it wraps the alphabet
+ * Then append to the result and return it outside the loop
+ */

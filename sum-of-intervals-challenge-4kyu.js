@@ -64,3 +64,14 @@ function sumIntervals(intervals) {
     }
     return total;
 }
+
+/**
+ * This was one of the first 4kyu solutions I did and it was a tricky one, this was very similar to the solution me and Felix came up with when solving Yonjou's challenge
+ * The first thing was to sort the arrays and set totals to 0 and have an empty array for merged intervals
+ * Merged intervals mean that if a sub interval contains values of another combine them and have the maximum and min be the array instead
+ * Next I looped through the intervals and created another sub-intervals array to loop through since it is 2-dimensional
+ * Loop through the sub intervals and check if the length is 0 or the mergedInterval at length - 1 and index 1 is less than the first element in the sub array meaning they don't overlap
+ * Push the sub interval into the merged intervals array since no overlap
+ * Else check for overlaps and use Math max to compare ends of intervals and set it to the end of the current sub interval
+ * Last loop through the merged intervals and add the values together and append to total and return the total
+ */
