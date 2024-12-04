@@ -24,3 +24,12 @@ function wave(str){
     }
     return wave
 }
+
+/**
+ * To solve this challenge I first knew that I had to turn the string into an array and also store into an array
+ * This is so I can target each character in the array
+ * Next is to loop through the string and split the str into an array, I tried to do the array outside of the loop, but it didn't work
+ * because if you do it creates multiple copies of the string
+ * Now check if there's a space and if there is just continue
+ * Then each element at i uppercase it and push it to the wave array and join
+ */
