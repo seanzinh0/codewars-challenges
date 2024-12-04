@@ -40,3 +40,12 @@ function bouncingBall(h,  bounce,  window) {
     }
     return times;
 }
+
+/**
+ * This question was a hard one because it took me a while to understand that a ball is seen 2 times on a bounce
+ * After getting over that initial hurdle being able to calculate the math was very easy
+ * I used a while loop because the question is saying that while the height is greater than the window it will bounce twice
+ * Height is calculated by the bounce and bounce has to be less than 1 and greater than zero
+ * This is because a bounces energy falls off as it bounces more so using a fractional value makes sense
+ * The hardest part really was understanding how the ball bounces
+ */
